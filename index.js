@@ -5,12 +5,7 @@ const { SentimentAnalyzer } = require("@nlpjs/sentiment");
 const { LangId } = require("@nlpjs/lang-id");
 const container = new Container();
 container.use(LangId);
-const mysql = require("mysql2");
-const connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  database: "gomango_db",
-});
+
 const cors = require('cors');
 
 const express = require("express"),
